@@ -1,7 +1,11 @@
-pre_ci_boot:
-    image_name: library/ipreoaccount
-    image_tag: latest
-    pull: true
+#no language needed
+language: none
+
+build:
+    pre_ci_boot:
+        image_name: library/ipreoaccount
+        image_tag: latest
+        pull: true
 
 #ECR integration
 integrations:
