@@ -17,7 +17,7 @@ jobs:
     type: manifest
     steps:
       - IN: testImage
-  -name: test-deploy
+  - name: test-deploy
     type: deploy
     steps:
       - IN: image-manifest
