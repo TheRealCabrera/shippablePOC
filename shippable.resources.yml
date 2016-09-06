@@ -12,7 +12,7 @@ resources:
       versionName: "latest"
       
 #cluster being used for deployment
-  - name: AWSIAM
+  - name: AWS-IAM
     type: cluster
     integration: AWS-IAM-Integration
     pointer:
