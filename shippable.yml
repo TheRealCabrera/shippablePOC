@@ -12,3 +12,13 @@ resources:
     pointer:
       sourceName : "default"
       region: "us-west-2"
+jobs:
+  - name: image-manifest
+    type: manifest
+    steps:
+      - IN: testImage
+  -name: test-deploy
+    type: deploy
+    steps:
+      - IN: image-manifest
+      - IN: AWSIAM
