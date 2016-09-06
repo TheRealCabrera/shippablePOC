@@ -1,0 +1,15 @@
+#shippable jobs yml
+jobs:
+
+#manifest for image being deployed
+  - name: image-manifest
+    type: manifest
+    steps:
+      - IN: testImage
+      
+#deploy that uses ECS and manifest
+  - name: test-deploy
+    type: deploy
+    steps:
+      - IN: image-manifest
+      - IN: AWSIAM
