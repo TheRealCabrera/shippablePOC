@@ -1,0 +1,14 @@
+pre_ci_boot:
+    image_name: library/ipreoaccount
+    image_tag: latest
+    pull: true
+    options: "-e HOME=/root"
+
+integrations:
+  hub:
+    - integrationName: ECRTest
+      type: ecr
+      branches:
+        only:
+          - master
+          - dev
