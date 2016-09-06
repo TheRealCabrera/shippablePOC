@@ -1,0 +1,14 @@
+resources:
+  - name: testImage
+    type: image
+    integration: ECRTest
+    pointer:
+      sourceName: "library/ipreoaccount"
+    seed:
+      versionName: "latest"
+ - name: AWSIAM
+    type: cluster
+    integration: AWS-IAM-Integration
+    pointer:
+      sourceName : "default"
+      region: "us-west-2"
