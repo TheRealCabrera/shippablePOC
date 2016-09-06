@@ -12,4 +12,4 @@ jobs:
     type: deploy
     steps:
       - IN: image-manifest
-      - IN: AWS-IAM-Integration
+      - IN: aws-test
