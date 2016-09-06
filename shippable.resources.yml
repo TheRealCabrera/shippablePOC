@@ -1,4 +1,8 @@
+#resources yml file
+
 resources:
+
+#image being used for testing
   - name: testImage
     type: image
     integration: ECRTest
@@ -6,19 +10,12 @@ resources:
       sourceName: "library/ipreoaccount"
     seed:
       versionName: "latest"
+      
+#cluster being used for deployment
   - name: AWSIAM
     type: cluster
     integration: AWS-IAM-Integration
     pointer:
       sourceName : "default"
       region: "us-west-2"
-jobs:
-  - name: image-manifest
-    type: manifest
-    steps:
-      - IN: testImage
-  - name: test-deploy
-    type: deploy
-    steps:
-      - IN: image-manifest
-      - IN: AWSIAM
+
