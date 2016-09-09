@@ -16,6 +16,6 @@ resources:
     type: cluster
     integration: AWS-Integration
     pointer:
-      sourceName : "default"
+      sourceName : "IpreoAccount"
       region: "us-east-1"
 
