@@ -12,7 +12,7 @@ resources:
       versionName: "latest"
       
 #cluster being used for deployment
-  - name: AWS-Integration
+  - name: aws-integration
     type: cluster
     integration: AWS-Integration
     pointer:
