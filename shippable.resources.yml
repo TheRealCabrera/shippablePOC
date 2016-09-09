@@ -12,10 +12,10 @@ resources:
       versionName: "latest"
       
 #cluster being used for deployment
-  - name: aws-test
+  - name: AWS-IAM-Integration
     type: cluster
-    integration: aws-test
+    integration: AWS-IAM-Integration
     pointer:
       sourceName : "default"
-      region: "us-west-2"
+      region: "us-east-1"
 
