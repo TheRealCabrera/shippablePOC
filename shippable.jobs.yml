@@ -12,4 +12,4 @@ jobs:
     type: deploy
     steps:
       - IN: image-manifest
-      - IN: AWS-Integration
+      - IN: aws-integration
