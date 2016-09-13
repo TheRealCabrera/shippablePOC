@@ -7,7 +7,7 @@ resources:
     type: image
     integration: ECRTest
     pointer:
-      sourceName: "library/shippable-test"
+      sourceName: "library/shippable-poc"
     seed:
       versionName: "latest"
       
