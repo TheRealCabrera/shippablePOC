@@ -9,7 +9,7 @@ resources:
     pointer:
       sourceName: "library/shippable-poc"
     seed:
-      versionName: "latest"
+      versionName: "1.0"
       
 #cluster being used for deployment
   - name: aws-integration
