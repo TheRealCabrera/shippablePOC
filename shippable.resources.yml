@@ -9,7 +9,7 @@ resources:
     pointer:
       sourceName: "library/ipreoaccount"
     seed:
-      versionName: "latest"
+      versionName: "0.1.0-build28"
       
 #cluster being used for deployment
   - name: aws-integration
